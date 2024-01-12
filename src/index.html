@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<!--Coypright 2023 - ruinformatique.ch-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content= "width=device-width, user-scalable=no">
+	<title>Ruinfo - Accueil</title>
+	<script src="assets/js/dat.gui/dat.gui.min.js"></script>
+	<link rel="stylesheet" href="assets/css/stars-interactive.css">
+	<link rel="stylesheet" href="assets/css/centaurion_v2.css">
+<link rel="stylesheet" href="assets/css/tailwind.css">
+	<link href="https:////fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
+	<link rel="icon" href="assets/img/ruinformatique.gif">
+</head>
+<body class="text-gray-200 py-2 px-[8vw]">
+	<header class="z-10 fixed top-10 left-8 bg-primary rounded-3xl">
+		<a href="https://www.ruinformatique.ch">
+			<div class="flex items-center p-4">
+				<img class="max-h-12" src="assets/img/ruinformatique.gif">
+				<h1 class="text-3xl font-bold">Ruinformatique</h1>
+			</div>
+		</a>
+	</header>
+	<nav class="z-10 fixed top-36 left-8 w-52 bg-primary rounded-3xl text-xl">
+		<ul>
+			<li><a class="p-3 pl-5 flex items-center gap-3 w-full text-nowrap duration-700 rounded-tl-3xl" href="#home"><img class="invert" src="assets/img/ui/icons/icons8-windowsmetro/home.svg"><p>Accueil</p></a></li>
+			<li><a class="p-3 pl-5 flex items-center gap-3 w-full text-nowrap duration-700" href="#projects"><img class="invert" src="assets/img/ui/icons/icons8-windowsmetro/briefcase.svg"><p>Projets</p></a></li>
+			<li><a class="p-3 pl-5 flex items-center gap-3 w-full text-nowrap duration-700 rounded-bl-3xl" href="#about"><img class="invert" src="assets/img/ui/icons/icons8-windowsmetro/about.svg"><p>À propos</p></a></li>
+		</ul>
+	</nav>
+	<section id="home" class="h-screen">
+		<div class="container relative z-10 bg-primary px-10 py-5 rounded-3xl mx-auto">
+			<h1 class="text-center text-4xl font-extrabold">Accueil</h1>
+		</div>
+		<div class="container w-11/12 relative z-10 bg-primary px-10 py-5 rounded-3xl mx-auto my-10">
+			<h2>Pannes de 2023</h2>
+			<h3>Maintenance des services</h3>
+			<p>Les différents services proposés sont en maintenance pour une durée indéterminée. Ce nouveau site web est en pleine construction, et les services précédemments utilisés comme "Flappy Covid 2022" suivront leur restauration après mise en place officielle du site web www.ruinformatique.ch .</p>
+			<h3>Que s'est-il passé ?</h3>
+			<p>Suite à une migration de l'infrastructure, certains services publiques comme le site web et le jeu "Flappy Covid 2022" se sont retrouvés corrompus. Ont été récupérés et relancés des applications comme le bot Discord Rui's Bot. L'occasion a été saisie pour repenser le site web et son traffic entrant. Des services comme Cloudflare ont donc été mis en place pour protéger et réguler la connexion aux différents sites web.</p>
+			<p class="news-footer">2023-03-12</p>
+		</div>
+		<div class="container w-11/12 relative z-10 bg-primary px-10 py-5 rounded-3xl mx-auto my-10">
+			<h2>Remise en service</h2>
+			<p>Le jeu "Flappy Covid 2022" a été remis sur pied sous un différent nom, "Flappy Virus 2023". Il est prévu de le rendre disponible sur le "Play Store", d'où le changement du nom afin de respecter les conditions de Google.</p>
+			<p>Les autres services comme "Rui's Bot" sont remontés depuis quelques mois déjà. Le site web est toujours en construction, il présente quelques défauts.</p>
+			<p class="news-footer">2023-06-18</p>
+		</div>
+	</section>
+	<section id="projects">
+		<div class="container relative z-10 bg-primary px-10 py-5 rounded-3xl mx-auto my-10">
+			<h2>Projets</h2>
+			<h3>En construction</h3>
+			<p>Quelques un de mes récents projets !</p>
+		</div>
+		<div id="projects-content">
+			<div class="w-96 relative z-10 bg-primary px-10 py-5 rounded-3xl mx-auto">
+				<h3>Flappy Virus 2023</h3>
+				<p>Allez le plus loin possible sans vous prendres d'aiguilles !</p>
+				<img class="w-2/3 h-auto mx-auto" alt="flappy virus 2023 screenshot" src="posts/media/fv23-thumbnail.png">
+				<a class="bg-secondary px-16 py-5 rounded-[2rem] mx-auto" href="https://fv23.ruinformatique.ch/" target="_blank">Jouer</a>
+			</div>
+			<!--
+			<div class="box">
+				<h3>Rui's bot</h3>
+				<p>Un bot discord open-source personnalisable avec l'API ChatGPT intégrée et une variété de commandes amusantes.</p>
+				<img src="posts/media/ruisbot-thumbnail.gif">
+				<a class="button" href="https://fv23.ruinformatique.ch/" target="_blank">En savoir plus</a>
+			</div>
+			-->
+		</div>
+	</section>
+	<section id="about">
+		<div id="home-content" class="box">
+			<h2>À propos</h2>
+			<h3>En construction</h3>
+			<p>Cette section contiendra des informations sur ce qu'est Ruinformatique et la personne derrière.</p>
+			<div class="w-fit mx-auto"><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me a Coffee', '#29abe0', 'B0B8SSPKI');kofiwidget2.draw();</script></div>
+		</div>
+	</section>
+	<div id="background"></div>
+	<div id="stars-interactive">
+		<div class="landscape"></div>
+		<canvas id="canvas"></canvas>
+		<script	src="assets/js/stars-interactive.js"></script>
+	</div>
+</body>
+</html>

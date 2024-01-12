@@ -1,0 +1,233 @@
+/*CSS Centaurion v2 by Banatawa*/
+/*Copyright 2023 - ruinformatique.ch*/
+/*Document*/  
+html{
+
+    outline: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Didact Gothic';
+    list-style: none;
+    user-select: text;
+}
+
+p{
+    font-size: larger;
+    width: 100%;
+}
+
+/* box and ui templates */
+.box{
+    border-radius: 20px;
+    background-color: rgba(25, 40, 51, 0.808); 
+    padding: 1em 2em;
+    z-index: 1;
+    position: relative;
+}
+
+.ui{
+    z-index: 10;
+    position: fixed;
+    left: 2em;
+}
+
+.button{
+    padding: 1em 3em;
+    background-color: rgb(19, 61, 98);
+    border-radius: 5em;
+    white-space: nowrap;
+}
+
+
+/* header */
+
+nav ul li:first-child a{
+    border-top-left-radius: 20px;
+}
+
+nav ul li:last-child a{
+    border-bottom-left-radius: 20px;
+}
+
+/* links */
+#links{
+    top:2em;
+    left: 25em;
+    text-align: center;
+}
+
+#links img{
+    height: 1.5em;
+    width: auto;
+}
+
+#links ul{
+    display: flex;
+    
+}
+
+/** content **/
+section{
+    padding-left: 15em;
+    padding-right: 15em;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 9em;
+}
+
+
+/* 1080p monitor */
+@media only screen and (min-width: 1400px){
+    p{
+        text-align: justify;
+    }
+
+    nav ul hr{
+        display: none;
+    }
+
+    nav ul li a:hover{
+        transition-duration:0.5s;
+        width: 6em;
+        background-color: rgba(0, 0, 0, 0.377);
+        cursor: pointer;
+        padding-left: 3em;
+    }
+}
+/* tablet */
+@media only screen and (max-width: 1400px) {
+    .icon{
+        height: 1.5em;
+    }
+
+    #header{
+        background-color: rgb(25, 40, 51);
+        right:0;
+        left:0;
+        top:0;
+        border-radius: 0;
+    }
+
+    section{
+        padding-right: 2em;
+        padding-left: 9em;
+        padding-bottom: 7em;
+    }
+
+    nav{
+        top:7em;
+        width: fit-content;
+        margin:0;
+        padding:0;
+    }
+
+    nav ul li a{
+        padding: 1em;
+    }
+
+    nav ul li p{
+        display: none;
+    }
+
+    nav ul li:first-child{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    nav ul li:last-child{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+}
+
+/* phone */
+@media only screen and (orientation: portrait) {
+    body{
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+    }
+    
+    html{
+        height: -webkit-fill-available;
+    }
+
+    .icon{
+        height: 1.5em;
+    }
+
+    h1{
+        font-size: 1.2em;
+    }
+
+    p, h2{
+        font-size: 1em;
+    }
+
+    #header{
+        background-color: rgb(25, 40, 51);
+        right:0;
+        left:0;
+        top:0;
+        border-radius: 0;
+        height: 1em;
+    }
+
+    section{
+        padding-top:6em;
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-bottom: 7em;
+    }
+
+    section div{
+        overflow: auto;
+        max-height: 90%;
+    }
+
+    nav.ui{
+        top:auto;
+        bottom:0;
+        left:0;
+        right:0;
+        width: 100%;
+        margin:0;
+        padding:0;
+        border-radius: 0;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li{
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+
+    nav ul li p{
+        display: none;
+    }
+
+    nav ul li a{
+        margin: 0 auto;
+        height: 0.5em;
+    }
+
+    nav ul li a *{
+        margin: 0 auto;
+    }
+
+    nav ul li a img.icon{
+        width: 1em;
+        height: auto;
+    }
+
+}
