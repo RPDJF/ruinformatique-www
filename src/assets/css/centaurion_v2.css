@@ -82,9 +82,6 @@ section{
 
 /* 1080p monitor */
 @media only screen and (min-width: 1400px){
-    p{
-        text-align: justify;
-    }
 
     nav ul hr{
         display: none;

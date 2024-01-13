@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
-<!--Coypright 2023 - ruinformatique.ch-->
+<!--Coypright 2024 - ruinformatique.ch-->
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content= "width=device-width, user-scalable=no">
@@ -12,8 +12,8 @@
 	<link href="https:////fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
 	<link rel="icon" href="assets/img/ruinformatique.gif">
 </head>
-<body class="text-gray-200 py-2 px-[8vw]">
-	<header class="z-10 fixed top-10 left-8 bg-primary rounded-3xl">
+<body class="text-gray-200 py-2 pl-[120px]"">
+	<header class="z-50 fixed top-10 left-8 bg-primary rounded-3xl">
 		<a href="https://www.ruinformatique.ch">
 			<div class="flex items-center p-4">
 				<img class="max-h-12" src="assets/img/ruinformatique.gif">
@@ -29,53 +29,92 @@
 		</ul>
 	</nav>
 	<section id="home" class="h-screen">
-		<div class="container relative z-10 bg-primary px-10 py-5 rounded-3xl mx-auto">
+		<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto">
 			<h1 class="text-center text-4xl font-extrabold">Accueil</h1>
 		</div>
-		<div class="container w-11/12 relative z-10 bg-primary px-10 py-5 rounded-3xl mx-auto my-10">
-			<h2>Pannes de 2023</h2>
-			<h3>Maintenance des services</h3>
-			<p>Les différents services proposés sont en maintenance pour une durée indéterminée. Ce nouveau site web est en pleine construction, et les services précédemments utilisés comme "Flappy Covid 2022" suivront leur restauration après mise en place officielle du site web www.ruinformatique.ch .</p>
-			<h3>Que s'est-il passé ?</h3>
-			<p>Suite à une migration de l'infrastructure, certains services publiques comme le site web et le jeu "Flappy Covid 2022" se sont retrouvés corrompus. Ont été récupérés et relancés des applications comme le bot Discord Rui's Bot. L'occasion a été saisie pour repenser le site web et son traffic entrant. Des services comme Cloudflare ont donc été mis en place pour protéger et réguler la connexion aux différents sites web.</p>
-			<p class="news-footer">2023-03-12</p>
-		</div>
-		<div class="container w-11/12 relative z-10 bg-primary px-10 py-5 rounded-3xl mx-auto my-10">
-			<h2>Remise en service</h2>
-			<p>Le jeu "Flappy Covid 2022" a été remis sur pied sous un différent nom, "Flappy Virus 2023". Il est prévu de le rendre disponible sur le "Play Store", d'où le changement du nom afin de respecter les conditions de Google.</p>
-			<p>Les autres services comme "Rui's Bot" sont remontés depuis quelques mois déjà. Le site web est toujours en construction, il présente quelques défauts.</p>
-			<p class="news-footer">2023-06-18</p>
+		<div class="grid grid-cols-5 w-11/12 mx-auto gap-10 h-[100%] overflow-hidden">
+			<aside class="h-fit col-span-3">
+				<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto my-10">
+
+				</div>
+			</aside>
+			<aside class="overflow-auto col-span-2">
+				<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto my-10">
+					<h2 class="text-2xl font-bold">Pannes de 2023</h2>
+					<h3 class="text-xl">Maintenance des services</h3>
+					<br/>
+					<p>Les différents services proposés sont en maintenance pour une durée indéterminée. Ce nouveau site web est en pleine construction, et les services précédemments utilisés comme "Flappy Covid 2022" suivront leur restauration après mise en place officielle du site web www.ruinformatique.ch .</p>
+					<h3>Que s'est-il passé ?</h3>
+					<p>Suite à une migration de l'infrastructure, certains services publiques comme le site web et le jeu "Flappy Covid 2022" se sont retrouvés corrompus. Ont été récupérés et relancés des applications comme le bot Discord Rui's Bot. L'occasion a été saisie pour repenser le site web et son traffic entrant. Des services comme Cloudflare ont donc été mis en place pour protéger et réguler la connexion aux différents sites web.</p>
+					<p class="ml-auto w-fit bg-primary rounded-xl p-2 text-sm">2023-03-12</p>
+				</div>
+				<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto my-10">
+					<h2 class="text-2xl font-bold">Remise en service</h2>
+					<br/>
+					<p>Le jeu "Flappy Covid 2022" a été remis sur pied sous un différent nom, "Flappy Virus 2023". Il est prévu de le rendre disponible sur le "Play Store", d'où le changement du nom afin de respecter les conditions de Google.</p>
+					<p>Les autres services comme "Rui's Bot" sont remontés depuis quelques mois déjà. Le site web est toujours en construction, il présente quelques défauts.</p>
+					<p class="ml-auto w-fit bg-primary rounded-xl p-2 text-sm">2023-06-18</p>
+				</div>
+			</aside>
 		</div>
 	</section>
 	<section id="projects">
-		<div class="container relative z-10 bg-primary px-10 py-5 rounded-3xl mx-auto my-10">
+		<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto">
+			<h1 class="text-center text-4xl font-extrabold">Projets</h1>
+		</div>
+		<div class="w-11/12 container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto my-10">
 			<h2>Projets</h2>
 			<h3>En construction</h3>
 			<p>Quelques un de mes récents projets !</p>
 		</div>
-		<div id="projects-content">
-			<div class="w-96 relative z-10 bg-primary px-10 py-5 rounded-3xl mx-auto">
-				<h3>Flappy Virus 2023</h3>
-				<p>Allez le plus loin possible sans vous prendres d'aiguilles !</p>
+		<div class="w-11/12 container mx-auto my-10 flex justify-evenly gap-5">
+			<div class="h-fit w-96 relative z-10 bg-secondary px-10 py-5 rounded-3xl">
+				<h1 class="text-2xl">Flappy Virus 2023</h3>
+				<div class="text-xs flex gap-2 mt-3">
+					<p class="bg-yellow-700 rounded-3xl w-fit p-2">pause</p>
+				</div>
+				<br>
 				<img class="w-2/3 h-auto mx-auto" alt="flappy virus 2023 screenshot" src="posts/media/fv23-thumbnail.png">
-				<a class="bg-secondary px-16 py-5 rounded-[2rem] mx-auto" href="https://fv23.ruinformatique.ch/" target="_blank">Jouer</a>
+				<br/>
+				<p>Allez le plus loin possible sans vous prendres d'aiguilles !</p>
+				<br/>
+				<div class="w-full flex justify-center">
+					<a class="w-36 text-center bg-interactive py-3 rounded-[2rem]" href="https://fv23.ruinformatique.ch/" target="_blank">Jouer</a>
+				</div>
 			</div>
-			<!--
-			<div class="box">
-				<h3>Rui's bot</h3>
-				<p>Un bot discord open-source personnalisable avec l'API ChatGPT intégrée et une variété de commandes amusantes.</p>
-				<img src="posts/media/ruisbot-thumbnail.gif">
-				<a class="button" href="https://fv23.ruinformatique.ch/" target="_blank">En savoir plus</a>
+			<div class="h-fit w-96 relative z-10 bg-secondary px-10 py-5 rounded-3xl">
+				<h1 class="text-2xl">Rui's Bot</h3>
+				<div class="text-xs flex gap-2 mt-3">
+					<p class="bg-blue-500 rounded-3xl w-fit p-2">open-source</p>
+					<p class="bg-yellow-700 rounded-3xl w-fit p-2">pause</p>
+				</div>
+				<br>
+				<img class="w-2/3 h-auto mx-auto" alt="rui's bot screenshot" src="posts/media/ruisbot-thumbnail.gif">
+				<br/>
+				<p>Un bot discord personnalisable avec l'API ChatGPT intégrée.</p>
+				<br/>
+				<div class="w-full flex flex-col justify-center items-center gap-5">
+					<a class="w-36 text-center bg-interactive py-3 rounded-[2rem]" href="https://top.gg/bot/956303957439955007" target="_blank">Inviter</a>
+					<a class="w-36 text-center bg-interactive py-3 rounded-[2rem]" href="https://github.com/RPDJF/discord-ruisbot" target="_blank">open-source</a>
+				</div>
 			</div>
-			-->
 		</div>
 	</section>
 	<section id="about">
-		<div id="home-content" class="box">
-			<h2>À propos</h2>
-			<h3>En construction</h3>
-			<p>Cette section contiendra des informations sur ce qu'est Ruinformatique et la personne derrière.</p>
-			<div class="w-fit mx-auto"><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me a Coffee', '#29abe0', 'B0B8SSPKI');kofiwidget2.draw();</script></div>
+		<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto">
+			<h1 class="text-center text-4xl font-extrabold">À propos</h1>
+		</div>
+		<div class="grid grid-cols-5 w-11/12 mx-auto gap-10 h-[100%] overflow-hidden">
+			<div class="col-span-3 h-fit container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto my-10">
+				<h2 class="text-2xl font-bold">Qui suis-je ?</h2>
+				<p>Je suis un simple étudiant en informatique à l'école 42, rien de plus ! Je code quelques petites broutilles sur mon temps libre et les postes sur ce site pour que tout le monde puisse profiter. La plupart de mes projets sont open-source et peuvent donc être maintenus par d'autres personnes.<br/></p>
+			</div>
+			<div class="col-span-2 h-fit container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto my-10">
+				<h2 class="text-2xl font-bold">Me soutenir</h2>
+				<p>Un simple follow sur mon compte github est un énorme soutient !</p>
+				<br>
+				<div class="w-fit mx-auto"><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me a Coffee', '#29abe0', 'B0B8SSPKI');kofiwidget2.draw();</script></div>
+			</div>
 		</div>
 	</section>
 	<div id="background"></div>
