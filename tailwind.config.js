@@ -8,6 +8,9 @@ module.exports = {
 				secondary: "#192833ce",
 				interactive: "#133d62",
 			},
+			fontFamily: {
+				"didact-gothic": ["Didact Gothic"],
+			}
 		},
 	},
 	plugins: [],

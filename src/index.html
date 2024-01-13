@@ -7,12 +7,11 @@
 	<title>Ruinfo - Accueil</title>
 	<script src="assets/js/dat.gui/dat.gui.min.js"></script>
 	<link rel="stylesheet" href="assets/css/stars-interactive.css">
-	<link rel="stylesheet" href="assets/css/centaurion_v2.css">
 <link rel="stylesheet" href="assets/css/tailwind.css">
 	<link href="https:////fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
 	<link rel="icon" href="assets/img/ruinformatique.gif">
 </head>
-<body class="text-gray-200 py-2 pl-[120px]"">
+<body class="text-gray-200 py-2 pl-[120px] font-didact-gothic">
 	<header class="z-50 fixed top-10 left-8 bg-primary rounded-3xl">
 		<a href="https://www.ruinformatique.ch">
 			<div class="flex items-center p-4">
@@ -21,18 +20,18 @@
 			</div>
 		</a>
 	</header>
-	<nav class="z-10 fixed top-36 left-8 w-52 bg-primary rounded-3xl text-xl">
-		<ul>
-			<li><a class="p-3 pl-5 flex items-center gap-3 w-full text-nowrap duration-700 rounded-tl-3xl" href="#home"><img class="invert" src="assets/img/ui/icons/icons8-windowsmetro/home.svg"><p>Accueil</p></a></li>
-			<li><a class="p-3 pl-5 flex items-center gap-3 w-full text-nowrap duration-700" href="#projects"><img class="invert" src="assets/img/ui/icons/icons8-windowsmetro/briefcase.svg"><p>Projets</p></a></li>
-			<li><a class="p-3 pl-5 flex items-center gap-3 w-full text-nowrap duration-700 rounded-bl-3xl" href="#about"><img class="invert" src="assets/img/ui/icons/icons8-windowsmetro/about.svg"><p>À propos</p></a></li>
+	<nav class="z-50 fixed bottom-0 left-0 right-0 xl:top-36 xl:left-8 xl:h-fit xl:w-52 bg-primary xl:rounded-3xl text-xl">
+		<ul class="flex justify-evenly xl:inline-block">
+			<li><a class="p-3 pl-5 flex items-center gap-3 w-full text-nowrap duration-700 rounded-tl-3xl" href="#home"><img class="invert" src="assets/img/ui/icons/icons8-windowsmetro/home.svg"><p class="hidden xl:block">Accueil</p></a></li>
+			<li><a class="p-3 pl-5 flex items-center gap-3 w-full text-nowrap duration-700" href="#projects"><img class="invert" src="assets/img/ui/icons/icons8-windowsmetro/briefcase.svg"><p class="hidden xl:block">Projets</p></a></li>
+			<li><a class="p-3 pl-5 flex items-center gap-3 w-full text-nowrap duration-700 rounded-bl-3xl" href="#about"><img class="invert" src="assets/img/ui/icons/icons8-windowsmetro/about.svg"><p class="hidden xl:block">À propos</p></a></li>
 		</ul>
 	</nav>
-	<section id="home" class="h-screen">
+	<section id="home" class="h-screen px-60 pt-8">
 		<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto">
 			<h1 class="text-center text-4xl font-extrabold">Accueil</h1>
 		</div>
-		<div class="grid grid-cols-5 w-11/12 mx-auto gap-10 h-[100%] overflow-hidden">
+		<div class="grid grid-cols-5 w-11/12 mx-auto gap-10 h-[80vh] overflow-hidden">
 			<aside class="h-fit col-span-3">
 				<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto my-10">
 
@@ -58,7 +57,7 @@
 			</aside>
 		</div>
 	</section>
-	<section id="projects" class="h-screen min-h-fit">
+	<section id="projects" class="h-screen px-60 min-h-fit">
 		<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto">
 			<h1 class="text-center text-4xl font-extrabold">Projets</h1>
 		</div>
@@ -100,7 +99,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="about" class="h-screen">
+	<section id="about" class="h-screen px-60">
 		<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto">
 			<h1 class="text-center text-4xl font-extrabold">À propos</h1>
 		</div>

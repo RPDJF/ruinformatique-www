@@ -1,100 +1,10 @@
 /*CSS Centaurion v2 by Banatawa*/
 /*Copyright 2023 - ruinformatique.ch*/
 /*Document*/  
-html{
-
-    outline: none;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: 'Didact Gothic';
-    list-style: none;
-    user-select: text;
-}
-
-p{
-    font-size: larger;
-    width: 100%;
-}
-
-/* box and ui templates */
-.box{
-    border-radius: 20px;
-    background-color: rgba(25, 40, 51, 0.808); 
-    padding: 1em 2em;
-    z-index: 1;
-    position: relative;
-}
-
-.ui{
-    z-index: 10;
-    position: fixed;
-    left: 2em;
-}
-
-.button{
-    padding: 1em 3em;
-    background-color: rgb(19, 61, 98);
-    border-radius: 5em;
-    white-space: nowrap;
-}
 
 
-/* header */
-
-nav ul li:first-child a{
-    border-top-left-radius: 20px;
-}
-
-nav ul li:last-child a{
-    border-bottom-left-radius: 20px;
-}
-
-/* links */
-#links{
-    top:2em;
-    left: 25em;
-    text-align: center;
-}
-
-#links img{
-    height: 1.5em;
-    width: auto;
-}
-
-#links ul{
-    display: flex;
-    
-}
 
 /** content **/
-section{
-    padding-left: 15em;
-    padding-right: 15em;
-    height: 100vh;
-    box-sizing: border-box;
-    padding-top: 9em;
-}
-
-
-/* 1080p monitor */
-@media only screen and (min-width: 1400px){
-
-    nav ul hr{
-        display: none;
-    }
-
-    nav ul li a:hover{
-        transition-duration:0.5s;
-        width: 6em;
-        background-color: rgba(0, 0, 0, 0.377);
-        cursor: pointer;
-        padding-left: 3em;
-    }
-}
 /* tablet */
 @media only screen and (max-width: 1400px) {
     .icon{
