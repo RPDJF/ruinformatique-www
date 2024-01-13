@@ -11,33 +11,33 @@
 	<link href="https:////fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
 	<link rel="icon" href="assets/img/ruinformatique.gif">
 </head>
-<body class="text-gray-200 py-2 pl-[120px] font-didact-gothic">
-	<header class="z-50 fixed top-10 left-8 bg-primary rounded-3xl">
+<body class="text-gray-200 xl:py-2 xl:pl-[120px] font-didact-gothic mt-20 xl:mt-16">
+	<header class="w-full xl:w-fit z-50 fixed top-0 xl:top-10 left-0 xl:left-8 bg-primary xl:rounded-3xl">
 		<a href="https://www.ruinformatique.ch">
-			<div class="flex items-center p-4">
-				<img class="max-h-12" src="assets/img/ruinformatique.gif">
-				<h1 class="text-3xl font-bold">Ruinformatique</h1>
+			<div class="flex items-center p-2 xl:p-4">
+				<img class="max-h-10 xl:max-h-12" src="assets/img/ruinformatique.gif">
+				<h1 class="text-xl xl:text-3xl font-bold">Ruinformatique</h1>
 			</div>
 		</a>
 	</header>
 	<nav class="z-50 fixed bottom-0 left-0 right-0 xl:top-36 xl:left-8 xl:h-fit xl:w-52 bg-primary xl:rounded-3xl text-xl">
-		<ul class="flex justify-evenly xl:inline-block">
-			<li><a class="p-3 pl-5 flex items-center gap-3 w-full text-nowrap duration-700 rounded-tl-3xl" href="#home"><img class="invert" src="assets/img/ui/icons/icons8-windowsmetro/home.svg"><p class="hidden xl:block">Accueil</p></a></li>
-			<li><a class="p-3 pl-5 flex items-center gap-3 w-full text-nowrap duration-700" href="#projects"><img class="invert" src="assets/img/ui/icons/icons8-windowsmetro/briefcase.svg"><p class="hidden xl:block">Projets</p></a></li>
-			<li><a class="p-3 pl-5 flex items-center gap-3 w-full text-nowrap duration-700 rounded-bl-3xl" href="#about"><img class="invert" src="assets/img/ui/icons/icons8-windowsmetro/about.svg"><p class="hidden xl:block">À propos</p></a></li>
+		<ul class="grid grid-cols-3 xl:inline-block">
+			<li><a class="p-3 xl:pl-5 flex items-center gap-3 w-full text-nowrap duration-700 rounded-tl-3xl" href="#home"><img class="invert mx-auto xl:mx-0" src="assets/img/ui/icons/icons8-windowsmetro/home.svg"><p class="hidden xl:block">Accueil</p></a></li>
+			<li><a class="p-3 xl:pl-5 flex items-center gap-3 w-full text-nowrap duration-700" href="#projects"><img class="invert mx-auto xl:mx-0" src="assets/img/ui/icons/icons8-windowsmetro/briefcase.svg"><p class="hidden xl:block">Projets</p></a></li>
+			<li><a class="p-3 xl:pl-5 flex items-center gap-3 w-full text-nowrap duration-700 rounded-bl-3xl" href="#about"><img class="invert mx-auto xl:mx-0" src="assets/img/ui/icons/icons8-windowsmetro/about.svg"><p class="hidden xl:block">À propos</p></a></li>
 		</ul>
 	</nav>
-	<section id="home" class="h-screen px-60 pt-8">
+	<section id="home" class="h-screen xl:px-60 scroll-mt-20">
 		<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto">
 			<h1 class="text-center text-4xl font-extrabold">Accueil</h1>
 		</div>
-		<div class="grid grid-cols-5 w-11/12 mx-auto gap-10 h-[80vh] overflow-hidden">
-			<aside class="h-fit col-span-3">
+		<div class="xl:grid xl:grid-cols-5 xl:gap-10 w-11/12 mx-auto h-[73vh] overflow-auto xl:overflow-hidden">
+			<aside class="h-fit xl:col-span-3">
 				<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto my-10">
 
 				</div>
 			</aside>
-			<aside class="overflow-auto col-span-2">
+			<aside class="overflow-auto xl:col-span-2">
 				<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto my-10">
 					<h2 class="text-2xl font-bold">Pannes de 2023</h2>
 					<h3 class="text-xl">Maintenance des services</h3>
@@ -57,7 +57,7 @@
 			</aside>
 		</div>
 	</section>
-	<section id="projects" class="h-screen px-60 min-h-fit">
+	<section id="projects" class="h-screen xl:px-60 scroll-mt-20">
 		<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto">
 			<h1 class="text-center text-4xl font-extrabold">Projets</h1>
 		</div>
@@ -66,49 +66,49 @@
 			<h3>En construction</h3>
 			<p>Quelques un de mes récents projets !</p>
 		</div>
-		<div class="w-11/12 container mx-auto my-10 flex justify-evenly gap-5">
-			<div class="h-fit w-96 relative z-10 bg-secondary px-10 py-5 rounded-3xl">
+		<div class="w-11/12 container mx-auto my-10 flex flex-col items-center xl:items-start xl:flex-row xl:justify-evenly gap-5 h-[50vh] overflow-auto">
+			<div class="h-fit w-72 xl:w-96 relative z-10 bg-secondary px-10 py-5 rounded-3xl">
 				<h1 class="text-2xl">Flappy Virus 2023</h3>
-				<div class="text-xs flex gap-2 mt-3">
+				<div class="text-xs flex gap-2 mt-3 flex-wrap">
 					<p class="bg-yellow-700 rounded-3xl w-fit p-2">pause</p>
 				</div>
 				<br>
-				<img class="w-2/3 h-auto mx-auto" alt="flappy virus 2023 screenshot" src="posts/media/fv23-thumbnail.png">
+				<img class="w-auto h-[155px] mx-auto" alt="flappy virus 2023 screenshot" src="posts/media/fv23-thumbnail.png">
 				<br/>
 				<p>Allez le plus loin possible sans vous prendres d'aiguilles !</p>
 				<br/>
-				<div class="w-full flex justify-center">
-					<a class="w-36 text-center bg-interactive py-3 rounded-[2rem]" href="https://fv23.ruinformatique.ch/" target="_blank">Jouer</a>
+				<div class="w-full flex flex-wrap justify-center items-center gap-5">
+					<a class="w-32 text-center bg-interactive py-3 rounded-[2rem]" href="https://fv23.ruinformatique.ch/" target="_blank">Jouer</a>
 				</div>
 			</div>
-			<div class="h-fit w-96 relative z-10 bg-secondary px-10 py-5 rounded-3xl">
+			<div class="h-fit w-72 xl:w-96 relative z-10 bg-secondary px-10 py-5 rounded-3xl">
 				<h1 class="text-2xl">Rui's Bot</h3>
-				<div class="text-xs flex gap-2 mt-3">
+				<div class="text-xs flex gap-2 mt-3 flex-wrap">
 					<p class="bg-blue-500 rounded-3xl w-fit p-2">open-source</p>
 					<p class="bg-yellow-700 rounded-3xl w-fit p-2">pause</p>
 				</div>
 				<br>
-				<img class="w-2/3 h-auto mx-auto" alt="rui's bot screenshot" src="posts/media/ruisbot-thumbnail.gif">
+				<img class="w-auto h-[155px] mx-auto" alt="rui's bot screenshot" src="posts/media/ruisbot-thumbnail.gif">
 				<br/>
 				<p>Un bot discord personnalisable avec l'API ChatGPT intégrée.</p>
 				<br/>
-				<div class="w-full flex flex-col justify-center items-center gap-5">
-					<a class="w-36 text-center bg-interactive py-3 rounded-[2rem]" href="https://top.gg/bot/956303957439955007" target="_blank">Inviter</a>
-					<a class="w-36 text-center bg-interactive py-3 rounded-[2rem]" href="https://github.com/RPDJF/discord-ruisbot" target="_blank">open-source</a>
+				<div class="w-full flex flex-wrap justify-center items-center gap-5">
+					<a class="w-32 text-center bg-interactive py-3 rounded-[2rem]" href="https://top.gg/bot/956303957439955007" target="_blank">Inviter</a>
+					<a class="w-32 text-center bg-interactive py-3 rounded-[2rem]" href="https://github.com/RPDJF/discord-ruisbot" target="_blank">open-source</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="about" class="h-screen px-60">
+	<section id="about" class="h-screen xl:px-60 scroll-mt-20">
 		<div class="container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto">
 			<h1 class="text-center text-4xl font-extrabold">À propos</h1>
 		</div>
-		<div class="grid grid-cols-5 w-11/12 mx-auto gap-10 h-[100%] overflow-hidden">
-			<div class="col-span-3 h-fit container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto my-10">
+		<div class="xl:grid xl:grid-cols-5 w-11/12 mx-auto gap-10 h-[100%] overflow-hidden">
+			<div class="xl:col-span-3 h-fit container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto my-10">
 				<h2 class="text-2xl font-bold">Qui suis-je ?</h2>
 				<p>Je suis un simple étudiant en informatique à l'école 42, rien de plus ! Je code quelques petites broutilles sur mon temps libre et les postes sur ce site pour que tout le monde puisse profiter. La plupart de mes projets sont open-source et peuvent donc être maintenus par d'autres personnes.<br/></p>
 			</div>
-			<div class="col-span-2 h-fit container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto my-10">
+			<div class="xl:col-span-2 h-fit container relative z-10 bg-secondary px-10 py-5 rounded-3xl mx-auto my-10">
 				<h2 class="text-2xl font-bold">Me soutenir</h2>
 				<p>Un simple follow sur mon compte github est un énorme soutient !</p>
 				<br>
