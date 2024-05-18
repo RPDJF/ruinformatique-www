@@ -11,6 +11,16 @@ module.exports = {
 			},
 			fontFamily: {
 				"didact-gothic": ["Didact Gothic"],
+			},
+			animation: {
+				sizeup: "sizeup 0.2s linear forwards",
+			},
+			keyframes: {
+				sizeup: {
+					"0%": { transform: "scale(1)" },
+					"50%": { transform: "scale(1.08)" },
+					"100%": { transform: "scale(1.06)" },
+				},
 			}
 		},
 	},
